@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 3 - Confirm Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <style>
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .form-section label {
+      font-weight: 600;
+    }
+    @media print {
+      .no-print {
+        display: none;
+      }
+      body {
+        padding: 0 !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+  <div class="card p-4">
+    <h3 class="text-center text-success mb-4"><i class="bi bi-check-circle-fill me-2"></i>Step 3: Confirm Your Details</h3>
+
+    <div class="form-section">
+      <h5 class="text-primary mb-3">Student Information</h5>
+      <div class="row mb-2">
+        <div class="col-md-6"><label>Name:</label> <span th:text="${admission.studentName}"></span></div>
+        <div class="col-md-6"><label>Email:</label> <span th:text="${admission.studentEmail}"></span></div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-6"><label>Course:</label> <span th:text="${admission.course}"></span></div>
+        <div class="col-md-6"><label>Mobile:</label> <span th:text="${admission.studentMobile}"></span></div>
+      </div>
+
+      <h5 class="text-primary mt-4 mb-3">Parent Information</h5>
+      <div class="row mb-2">
+        <div class="col-md-6"><label>Parent Name:</label> <span th:text="${admission.parentName}"></span></div>
+        <div class="col-md-6"><label>Phone:</label> <span th:text="${admission.parentPhone}"></span></div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-6"><label>Occupation:</label> <span th:text="${admission.parentOccupation}"></span></div>
+        <div class="col-md-6"><label>Relation:</label> <span th:text="${admission.relation}"></span></div>
+      </div>
+      <div class="mb-3"><label>Address:</label> <span th:text="${admission.parentAddress}"></span></div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="d-flex justify-content-between mt-4 no-print">
+      <button class="btn btn-outline-secondary" onclick="window.print()">
+        <i class="bi bi-printer-fill me-1"></i> Print
+      </button>
+      <form th:action="@{/submit}" method="post">
+        <button type="submit" class="btn btn-success">
+          <i class="bi bi-send-check-fill me-1"></i> Submit Application
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

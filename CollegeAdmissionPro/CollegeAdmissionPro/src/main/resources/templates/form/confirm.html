@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirm Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+  <h3>Step 3: Confirm Your Details</h3>
+  <div class="card p-4 mb-3">
+    <h5>Student Info</h5>
+    <p><strong>Name:</strong> <span th:text="${admission.studentName}"></span></p>
+    <p><strong>Email:</strong> <span th:text="${admission.studentEmail}"></span></p>
+    <p><strong>Course:</strong> <span th:text="${admission.course}"></span></p>
+    <p><strong>Mobile:</strong> <span th:text="${admission.studentMobile}"></span></p>
+    <h5>Parent Info</h5>
+    <p><strong>Name:</strong> <span th:text="${admission.parentName}"></span></p>
+    <p><strong>Phone:</strong> <span th:text="${admission.parentPhone}"></span></p>
+    <p><strong>Occupation:</strong> <span th:text="${admission.parentOccupation}"></span></p>
+    <p><strong>Address:</strong> <span th:text="${admission.parentAddress}"></span></p>
+    <p><strong>Relation:</strong> <span th:text="${admission.relation}"></span></p>
+  </div>
+  <form th:action="@{/submit}" method="post">
+    <button type="submit" class="btn btn-success">Submit Application</button>
+  </form>
+</div>
+</body>
+</html>
