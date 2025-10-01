@@ -43,8 +43,6 @@ This portal aims to reduce manual work, improve operational efficiency, and prov
   - Approve or reject student applications
   - Search and filter student applications efficiently
 
-- **Notifications**
-  - Email notifications to students on submission and approval/rejection
 
 - **Reporting**
   - Generate reports on admissions, pending forms, and application statistics
