@@ -1,7 +1,7 @@
 # 🏫 College Admission Portal
 
 <div align="center">
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="College Admission Portal Logo" width="200">
+<img src="https://cdn-icons-png.flaticon.com/512/2942/2942821.png" alt="College Admission Portal Logo" width="200">
   <br>
   <h3>Streamlining College Admissions with Technology</h3>
   
