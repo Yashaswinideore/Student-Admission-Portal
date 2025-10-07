@@ -1,7 +1,7 @@
 # 🏫 College Admission Portal
 
 <div align="center">
-<img src="https://static.vecteezy.com/system/resources/thumbnails/025/221/331/small/cartoon-student-cute-school-ai-generate-png.png" alt="College Admission Portal Logo" width="100">
+<img src="https://static.vecteezy.com/system/resources/thumbnails/025/221/331/small/cartoon-student-cute-school-ai-generate-png.png" alt="College Admission Portal Logo" width="150">
   <br>
   <h3>Streamlining College Admissions with Technology</h3>
   
