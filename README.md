@@ -1,11 +1,11 @@
 # 🏫 College Admission Portal
 
 <div align="center">
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="College Admission Portal Logo" width="200">
+<img src="https://static.vecteezy.com/system/resources/thumbnails/025/221/331/small/cartoon-student-cute-school-ai-generate-png.png" alt="College Admission Portal Logo" width="100">
   <br>
   <h3>Streamlining College Admissions with Technology</h3>
   
-  ![Java](https://img.shields.io/badge/java-17-orange)
+  ![Java](https://img.shields.io/badge/java-21-orange)
   ![Spring Boot](https://img.shields.io/badge/springboot-2.7-brightgreen)
   ![Status](https://img.shields.io/badge/status-active-success)
 </div>
